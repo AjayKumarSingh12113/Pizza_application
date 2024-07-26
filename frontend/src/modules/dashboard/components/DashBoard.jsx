@@ -27,7 +27,7 @@ export const DashBoard = () => {
     const pizzas = await getApiCall(PIZZA_ENDPOINT);
     console.log('Pizzas are ', pizzas);
     setLoading(false);
-    setPizzas(pizzas['products']);
+      setPizzas(pizzas['Vegetarian']);
     }
     catch(err){
       setErrors(err);
